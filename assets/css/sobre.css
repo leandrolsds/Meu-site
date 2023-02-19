@@ -1,0 +1,122 @@
+.sobre {
+    align-items: center;
+    display: flex;
+    border-radius: 10px;
+    flex-direction: column;
+    padding: 3rem 1rem;
+}
+.sobre__titulo {
+    display: none;
+}
+.sobre__conteudo {
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.424);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem 1.5rem;
+    max-width: 500px;
+
+}
+.sobre__apresentacao__titulo {
+    color: #333;
+    font-size: 1.3rem;
+    padding-bottom: 1rem;
+
+}
+.sobre__descricao {
+    color: #7A7A7A;
+    font-size: 1rem;
+    text-align: justify;
+    line-height: 1.4;
+}
+.link__verContado {
+        color:#333;
+        text-decoration: underline;
+    }
+.sobre__imagem {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.minha__imagem {
+    width: 80vw;
+    max-width: 400px;
+    border-radius: 10px;
+    padding-bottom: 1rem;
+}
+hr {
+    padding: 1px;
+    background-color: #E7F500;
+    width: 100%;
+    margin: 1rem 0;
+}
+
+
+@media screen and (min-width: 768px) {
+    .sobre__titulo {
+        color: #333;
+        display: block;
+        font-size: 3rem;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+    .sobre__conteudo {
+        flex-direction: row;
+        box-shadow: none;
+        padding: 0;
+        box-sizing: border-box;
+        max-width: 768px;
+    }
+    hr {
+        display: none;
+    }
+    .sobre__apresentacao {
+        width: 50%;
+    }
+    .sobre__imagem{
+        align-items: flex-start;
+        width: 50%;
+    }
+    .minha__imagem {
+        padding-bottom: 0;
+        width: 350px;
+        
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .sobre {
+        width: 100%;
+        padding: 5rem 0;
+    }
+    .sobre__titulo {
+        padding-bottom: 3rem;
+    }
+    .sobre__conteudo {
+        padding: 0;
+        max-width: 940px;
+    }
+    hr {
+        display: none;
+    }
+    .sobre__imagem{
+        width: 50%;
+        height: 400px;
+    }
+    .minha__imagem {
+        width: 100%;
+    }
+    .sobre__apresentacao {
+
+    }
+    .sobre__apresentacao__titulo {
+        font-size: 1.5rem;
+    }
+    .sobre__descricao {
+        font-size: 1.3rem;
+    }
+   
+}

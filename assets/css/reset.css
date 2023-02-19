@@ -1,0 +1,51 @@
+
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,700,300);
+
+:root {
+	--preto-body: #252525;
+	--preto: #21252A;
+	--preto-banner: #151314;
+	--cinzenta: #F2F5F7;
+	--laranja: #EB602D;
+	--laranja-hover: #913a1a;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+ 	font-family: Roboto, sans-serif;
+	list-style: none;
+	border: 0;
+	scroll-behavior: smooth;
+}
+body {
+	margin-top: 55px;
+}
+.sobre , .skills, .portfolios, .certificados {
+	display: flex;
+	justify-content: center;
+	min-height: 100vh;
+}
+
+@media screen and (min-width: 1024px) {
+	[data-anime] {
+		opacity: 0;
+		transition: 1s;
+	}
+	[data-anime="left"] {
+		transform: translate3d(-200px, 0, 0);
+	}
+	[data-anime="right"] {
+		transform: translate3d(200px, 0, 0);
+	}
+	[data-anime="button"] {
+		transform: translate3d(0, 200px, 0);
+	}
+	[data-anime].animate {
+		opacity: 1;
+		transform: translate3d(0px, 0px, 0px);
+	}
+}

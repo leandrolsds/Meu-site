@@ -1,0 +1,101 @@
+.portfolios {
+    background: url(../img/backgroung-parallax.jpg) no-repeat center center / cover;
+    display: flex;
+    flex-direction: column;
+    padding: 3rem 0 5rem;
+    align-items: center;
+    background-attachment: fixed;
+ 
+}
+.portfolio__conteudo {
+    display:grid;
+    grid-gap: 30px;
+    grid-template-columns: auto;
+}
+.portfolio {
+    box-shadow: 1px 1px 10px rgba(3, 3, 3, 0.3);
+    display: flex;
+    flex-direction: column;
+    padding-top: 2rem;
+    border-radius: 10px;
+    align-items: center;
+    width: 310px;
+}
+
+.portfolio__imagem {
+    width: 70%;
+}
+.portfolio__titulo {
+    font-size: 2rem;
+    color: #333;
+    text-align: center;
+    padding-bottom: 3rem;
+}
+.portfolio__descricao {
+    color: #E7F500;
+    text-align: center;
+    font-size: 1rem;
+}
+.ver__projeto {
+    margin-top: 1rem;
+    background: #333;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1rem;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.informacoes__projeto {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.linguagens__protfolio {
+    justify-content: center;
+    display: flex;
+    gap: 4px;
+    flex-wrap: wrap;
+    width: 100px;
+}
+.linguagens__protfolio p {
+    font-size: 12px;
+    color: #f0f8ff6c;
+}
+.ver__projeto a {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    color: #FFF;
+    transition: 1s;
+    
+}
+.ver__projeto a:hover {
+    transform: scale(1.1);
+}
+.imagem__link__projeto, .imagem__link__codigo {
+    width: 40px;
+    margin-bottom: .5rem;
+}
+@media screen and (min-width: 720px) {
+    .portfolio__conteudo {
+        grid-template-columns: auto auto;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .portfolio {
+        transition: 1s;
+    }
+    .portfolio:hover {
+        transform: translateY(-15px);
+    }
+    .portfolio__conteudo {
+        grid-template-columns: auto auto auto;
+    }
+    .portfolio__titulo {
+        font-size: 3rem;
+    }
+}
