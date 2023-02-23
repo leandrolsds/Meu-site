@@ -24,7 +24,7 @@ const sec = document.querySelectorAll("section");
 
 function activeMenu() {
     let len = sec.length;
-    while(--len && window.scrollY - 200 < sec[len].offsetTop){
+    while(--len && window.scrollY - 700 < sec[len].offsetTop){
         li.forEach(ltx => ltx.classList.remove("active"));
         li[len].classList.add("active");
     }
@@ -69,5 +69,5 @@ animeScroll();
 if(target.length) {
     window.addEventListener('scroll', debounce(function() {
         animeScroll();
-    }, 200));
+    }, 100));
 }
