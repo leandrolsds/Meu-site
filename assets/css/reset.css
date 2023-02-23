@@ -2,15 +2,6 @@
 
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,700,300);
 
-:root {
-	--preto-body: #252525;
-	--preto: #21252A;
-	--preto-banner: #151314;
-	--cinzenta: #F2F5F7;
-	--laranja: #EB602D;
-	--laranja-hover: #913a1a;
-}
-
 *{
 	margin: 0;
 	padding: 0;
