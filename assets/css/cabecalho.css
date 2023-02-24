@@ -44,7 +44,7 @@
     padding: .3rem .8rem ;
     color: #333;
     font-size: 25px;
-}                                           
+}                                          
 .active {
     font-weight: bold;
 }
@@ -116,6 +116,10 @@
         border-radius: 8px;
         color: #333;
         font-size: 20px;
+    }
+    .menu__item .modificacao {
+        font-weight: bold;
+        background-color:aliceblue;
     }
     .menu__link:hover {
         background-color: #333;
