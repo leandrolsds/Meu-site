@@ -6,6 +6,13 @@ function hamburguer(event) {
     if(event.type === 'touchstart') event.preventDefault();
     const nav = document.getElementById("menu");
     nav.classList.toggle('active');
+
+    const link_menu =[...document.querySelectorAll(".menu__link")];
+    link_menu.map((element) => {
+        element.addEventListener("click", () => {
+            nav.classList.remove("active")
+        })
+    })
     const active = nav.classList.contains('active');
     event.currentTarget.setAttribute('aria-expanded', active);
     if (active) {
