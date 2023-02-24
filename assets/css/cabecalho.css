@@ -121,7 +121,7 @@
         background-color: #333;
         color: #E7F500;
     }
-    .active {
+    .menu__link.active {
         border-bottom:  none;
         background-color: #333;
         color: #E7F500;
