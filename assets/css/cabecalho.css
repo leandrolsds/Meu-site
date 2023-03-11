@@ -43,7 +43,7 @@
 .menu__link {
     padding: .3rem .8rem ;
     color: #333;
-    font-size: 25px;
+    font-size: 20px;
 }                                          
 .active {
     font-weight: bold;
@@ -115,11 +115,11 @@
     .menu__link {
         border-radius: 8px;
         color: #333;
-        font-size: 20px;
     }
     .menu__item .modificacao {
         font-weight: bold;
-        background-color:aliceblue;
+        background-color: #333;
+        color: #E7F500;
     }
     .menu__link:hover {
         background-color: #333;
